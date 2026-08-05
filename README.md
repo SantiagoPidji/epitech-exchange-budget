@@ -14,9 +14,9 @@ Ce projet permet de tracker ses dépenses, de gérer les conversions de devises 
    - Utilise le menu déroulant pour sélectionner ton pays (ex: Thaïlande, Corée du Sud, Canada...).
    - Le tableau adaptera automatiquement les taux de change et les symboles monétaires !
 
-3. **Lier un formulaire de saisie mobile (Optionnel mais recommandé) :**
-   - Dans ton Sheet, va dans `Outils > Créer un formulaire`.
-   - Les réponses s'ajouteront automatiquement dans l'onglet `Réponses au formulaire`.
+3. Utiliser le formulaire mobile :
+   - Un Google Form a été automatiquement copié dans ton Drive en même temps que ce tableur !
+   - Pour trouver son lien et l'ajouter sur l'écran d'accueil de ton téléphone, va dans ton nouveau tableur, clique sur `Outils > Gérer le formulaire > Accéder au formulaire en ligne`.
 
 ## ⚙️ Architecture Technique & Apps Script
 

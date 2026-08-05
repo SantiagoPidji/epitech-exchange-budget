@@ -1,3 +1,38 @@
+/**
+ * Crée un menu personnalisé à l'ouverture du tableur.
+ */
+function onOpen() {
+  const ui = SpreadsheetApp.getUi();
+  ui.createMenu('⚙️ Budget Auto')
+    .addItem('Activer l\'archivage mensuel', 'setupMonthlyTrigger')
+    .addToUi();
+}
+
+/**
+ * Configure le déclencheur temporel si ce n'est pas déjà fait.
+ */
+function setupMonthlyTrigger() {
+  const ui = SpreadsheetApp.getUi();
+  const triggers = ScriptApp.getProjectTriggers();
+  
+  // Vérifie si le trigger existe déjà pour éviter les doublons
+  for (let i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === 'clotureMensuelle') {
+      ui.alert('Information', 'L\'archivage automatique est déjà activé !', ui.ButtonSet.OK);
+      return;
+    }
+  }
+  
+  // Crée le déclencheur pour le 1er du mois entre minuit et 1h du matin
+  ScriptApp.newTrigger('clotureMensuelle')
+    .timeBased()
+    .onMonthDay(1)
+    .atHour(0)
+    .create();
+    
+  ui.alert('Succès 🎉', 'L\'archivage automatique a été configuré avec succès ! Il s\'exécutera tous les 1er du mois.', ui.ButtonSet.OK);
+}
+
 function clotureMensuelle() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   

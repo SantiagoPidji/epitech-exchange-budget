@@ -7,7 +7,7 @@ Ce projet permet de tracker ses dépenses, de gérer les conversions de devises 
 ## 🚀 Installation & Utilisation (En 3 étapes)
 
 1. **Dupliquer le Master Template :**
-   👉 [Clique ici pour créer ta propre copie du Google Sheet]([TON_LIEN_ICI_FINISSANT_PAR_/copy])
+   👉 [Clique ici pour créer ta propre copie du Google Sheet]([https://docs.google.com/spreadsheets/d/1zKT0se69DHSrHRLyYvT3qo8HiCPZxkdyRFJ4Ne2wWno/copy])
 
 2. **Configurer sa destination :**
    - Rends-toi sur l'onglet `Dashboard`.

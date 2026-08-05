@@ -1,0 +1,5 @@
+# Google Apps Script CLI
+.clasp.json
+
+# Node/Dependencies (si tu utilises npm plus tard pour du linting/testing)
+node_modules/
